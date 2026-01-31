@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLORA BEAUTY | Connexion</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a class="brand" href="../index.html">
+      <img src="../images/logo.png" alt="VLORA BEAUTY" class="logo" />
+      <span class="site-name">VLORA BEAUTY</span>
+    </a>
+
+    <nav class="nav">
+      <a href="../index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+      <a href="produits.html"><i class="fa-solid fa-bag-shopping"></i> Produits</a>
+
+      <a href="panier.html" class="nav-cart" aria-label="Panier">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cartCount" class="cart-badge">0</span>
+      </a>
+
+      <a href="inscription.html"><i class="fa-solid fa-user-plus"></i> Inscription</a>
+      <a href="connexion.html" class="active"><i class="fa-solid fa-right-to-bracket"></i> Connexion</a>
+      <a href="apropos.html"><i class="fa-solid fa-circle-info"></i> À propos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section auth">
+      <div class="auth-card">
+        <h2>Connexion</h2>
+        <p class="muted">Connectez-vous à votre compte VLORA BEAUTY.</p>
+
+        <form id="loginForm" class="auth-form" novalidate>
+          <div class="field">
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" class="input" type="email" placeholder="ex: nom@gmail.com" required />
+            <small class="error" id="err-loginEmail"></small>
+          </div>
+
+          <div class="field">
+            <label for="loginPassword">Mot de passe</label>
+            <input id="loginPassword" class="input" type="password" placeholder="Votre mot de passe" required />
+            <small class="error" id="err-loginPassword"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-btn">Se connecter</button>
+
+          <p class="muted" style="margin-top:12px;">
+            Pas encore de compte ? <a class="link" href="inscription.html">Créer un compte</a>
+          </p>
+
+          <div id="loginMsg" class="auth-msg" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer-minimal">
+    <p>© 2026 VLORA BEAUTY — Tous droits réservés |<a href="../index.html">Accueil</a></p>
+  </footer>
+
+  <script src="../javascript/app.js" defer></script>
+</body>
+</html>

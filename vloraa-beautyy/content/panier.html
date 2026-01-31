@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLORA BEAUTY | Panier</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../style/style.css" />
+ 
+
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <a class="brand" href="../index.html">
+      <img src="../images/logo.png" alt="VLORA BEAUTY" class="logo" />
+      <span class="site-name">VLORA BEAUTY</span>
+    </a>
+
+    <nav class="nav">
+  <a href="../index.html"><i class="fa-solid fa-house"></i> Accueil</a>
+  <a href="produits.html"><i class="fa-solid fa-bag-shopping"></i> Produits</a>
+  <a href="panier.html" class="nav-cart" aria-label="Panier">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cartCount" class="cart-badge">0</span>
+</a>
+  <a href="inscription.html"><i class="fa-solid fa-user-plus"></i> Inscription</a>
+  <a href="connexion.html"><i class="fa-solid fa-right-to-bracket"></i> Connexion</a>
+  <a href="apropos.html"><i class="fa-solid fa-circle-info"></i> À propos</a>
+</nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="section">
+      <h2>Mon panier</h2>
+
+      <!-- boite principale -->
+      <div class="cart-box">
+
+        <!-- liste des produit  -->
+        <div id="cartContainer" class="cart-container"></div>
+
+        <!-- totale  -->
+        <div class="cart-inline-total cart-total-bottom">
+          <div class="cart-inline-left">
+            <h3 class="cart-inline-title">Total</h3>
+            <p class="muted">Résumé de votre panier</p>
+          </div>
+
+          <div class="cart-inline-right">
+            <strong id="cartTotal" class="cart-total-pill">0 DA</strong>
+
+            <div class="cart-inline-buttons">
+              <button id="clearCartBtn" class="btn btn-outline btn-small" type="button">
+                Vider
+              </button>
+              <a class="btn btn-small btn-primary" href="produits.html">Continuer</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- livraison -->
+<div class="cart-shipping">
+  <h4>Livraison</h4>
+
+  <label class="ship-option">
+    <input type="radio" name="shipping" value="0" checked>
+    <span>Standard (3–5 jours) — Gratuit</span>
+  </label>
+
+  <label class="ship-option">
+    <input type="radio" name="shipping" value="500">
+    <span>Express (24–48h) — 500 DA</span>
+  </label>
+</div>
+
+<div class="cart-inline-buttons">
+  
+  <button id="checkoutBtn" class="btn btn-small btn-success" type="button">Commander</button>
+</div>
+ <p id="orderMsg" class="order-msg" style="display:none;"></p>
+
+
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+ <footer class="site-footer-minimal">
+    <p>
+      © 2026 VLORA BEAUTY — Tous droits réservés | 
+      <a href="../index.html">Accueil</a>
+    </p>
+  </footer>
+
+  <script src="../javascript/app.js" defer></script>
+</body>
+</html>

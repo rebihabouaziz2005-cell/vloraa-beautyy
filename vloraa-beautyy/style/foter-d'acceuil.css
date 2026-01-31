@@ -1,0 +1,172 @@
+
+ /* =========================
+   FOOTER VLORA BEAUTY
+   Style général du pied de page
+========================= */
+.site-footer {
+  background: #fffafb;              /* Couleur de fond du footer */
+  color: #333;                      /* Couleur du texte */
+  font-family: 'Poppins', sans-serif; /* Police utilisée */
+  line-height: 1.5;                 /* Espacement entre les lignes */
+  margin-top: 80px;                 /* Espace au-dessus du footer */
+}
+
+/* Applique le style à tous les éléments du footer */
+.site-footer * {
+  color: #333 !important;           /* Force la couleur du texte */
+  text-decoration: none;            /* Supprime les soulignements */
+}
+
+/* =========================
+   PARTIE HAUTE DU FOOTER
+========================= */
+.footer-top {
+  max-width: 1200px;                /* Largeur maximale */
+  margin: auto;                     /* Centre horizontalement */
+  padding: 70px 20px 50px;           /* Espacement interne */
+  display: grid;                    /* Mise en page en grille */
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* Colonnes */
+  gap: 40px;                        /* Espacement entre colonnes */
+}
+
+/* Titre principal du footer */
+.footer-main h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+/* Texte descriptif */
+.footer-main p {
+  font-size: 15px;
+  opacity: 0.9;                     /* Légère transparence */
+  margin-bottom: 18px;
+  max-width: 420px;
+}
+
+/* Titres des colonnes */
+.footer-col h3 {
+  font-size: 17px;
+  margin-bottom: 14px;
+}
+
+/* Liste des liens */
+.footer-col ul {
+  list-style: none;                 /* Supprime les puces */
+  padding: 0;
+}
+
+/* Élément de liste */
+.footer-col ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+/* =========================
+   BOUTON "HELLO"
+========================= */
+.hello {
+  background: #fff0f3;              /* Couleur du bouton */
+  color: #fff;                      /* Couleur du texte */
+  padding: 12px 26px;               /* Taille interne */
+  border-radius: 30px;              /* Bouton arrondi */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;                  /* Curseur cliquable */
+  display: inline-block;
+  transition: 0.3s;                 /* Animation douce */
+}
+
+/* Effet au survol */
+.hello:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   ICÔNES DES RÉSEAUX SOCIAUX
+========================= */
+.socials-icons a {
+  font-size: 20px;                  /* Taille des icônes */
+  margin-right: 12px;               /* Espace entre icônes */
+  transition: 0.3s;
+}
+
+/* Animation au survol */
+.socials-icons a:hover {
+  transform: scale(1.2);            /* Zoom */
+  opacity: 0.8;
+}
+
+/* =========================
+   PARTIE INFÉRIEURE DU FOOTER
+========================= */
+.footer-info,
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+  border-top: 1px solid rgba(0,0,0,0.1); /* Ligne séparatrice */
+}
+
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Liens légaux */
+.footer-links a {
+  margin: 0 8px;
+  opacity: 0.9;
+}
+
+/* Effet au survol des liens */
+.footer-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE (TABLETTE)
+========================= */
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    padding: 40px 20px 30px;
+    gap: 25px;
+  }
+
+  .footer-main h2 { font-size: 24px; }
+  .footer-main p,
+  .footer-col ul li,
+  .footer-info p,
+  .footer-bottom p { font-size: 13px; }
+
+  .footer-links a { margin: 0 5px; }
+  .hello { padding: 10px 20px; font-size: 13px; }
+  .socials-icons a { font-size: 18px; margin-right: 8px; }
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 500px) {
+  .footer-top {
+    grid-template-columns: 1fr;      /* 1 colonne */
+    text-align: center;
+    padding: 25px 15px 20px;
+    gap: 15px;
+  }
+
+  .footer-main h2 { font-size: 20px; }
+  .footer-main p,
+  .footer-col ul li,
+  .footer-info p,
+  .footer-bottom p { font-size: 12px; }
+
+  .footer-links a { margin: 0 3px; }
+  .hello { padding: 8px 16px; font-size: 12px; }
+  .socials-icons a { font-size: 16px; margin-right: 6px; }
+}
